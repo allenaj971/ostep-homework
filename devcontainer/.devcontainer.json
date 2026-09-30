@@ -1,0 +1,14 @@
+{
+  "name": "OSTEP Minimal",
+  "image": "debian:bookworm-slim",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod +x./post-devcontainer.sh && ./post-devcontainer.sh",
+  "remoteUser": "root"
+}
